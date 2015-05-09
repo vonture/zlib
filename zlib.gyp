@@ -33,6 +33,13 @@
           'toolsets': ['target', 'host'],
         }],
       ],
+      'msvs_disabled_warnings': [
+        4324, # Structure was padded
+        4244, # Conversion possible loss of data
+        4702, # Unreachable code
+        4100, # Unreferenced formal parameter
+        4127, # Constant conditional expression
+      ],
     },
     {
       'target_name': 'zlib',
@@ -88,6 +95,16 @@
           'toolsets': ['target', 'host'],
         }],
       ],
+      'msvs_disabled_warnings': [
+        4996, # Depricated/unsafe functions
+        4324, # Structure was padded
+        4244, # Conversion possible loss of data
+        4131, # Old-stype declarator
+        4127, # Constant conditional expression
+        4100, # Unreferenced formal parameter
+        4057, # Function differs in indirection
+        4701, # Potentially uninitialized local variable
+      ],
     },
     {
       'target_name': 'minizip',
@@ -137,6 +154,12 @@
             'USE_FILE32API'
           ],
         }],
+      ],
+      'msvs_disabled_warnings': [
+        4100, # Unreferenced formal parameter
+        4244, # Conversion possible loss of data
+        4189, # Local variable is initialized but not referenced
+        4131, # Old-stype declarator
       ],
     },
   ],
